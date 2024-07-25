@@ -1,0 +1,16 @@
+.pokemon-detailed-container {
+    padding-top: 20px;
+  }
+  
+  .pokemon-detailed-card {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    height: 560px;
+  }
+  
+  .pokemon-name {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  

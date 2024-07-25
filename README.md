@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Show Your Pokémon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Show Your Pokémon is a web application built with React and Redux that allows users to log in, view a collection of Pokémon, and see detailed information about each Pokémon. Users can sign up, log in, view a paginated list of Pokémon, and see detailed views of individual Pokémon. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Sign up and log in using a username and password.
+- **Pokémon Collection**: View a paginated collection of Pokémon.
+- **Detailed Pokémon View**: Click on a Pokémon to see more details.
+- **Responsive Design**: The application is designed to be responsive and user-friendly.
+- **Redux State Management**: Utilizes Redux for state management.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React, React Router, Redux, React Bootstrap
+- **Backend**: PokeAPI (external API)
+- **Styling**: Bootstrap, Custom CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Follow these instructions to set up and run the project on your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Anuj2906/show-your-pokemon.git
+    cd show-your-pokemon
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+### Running the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Start the development server:
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Open your browser and navigate to:
+    ```
+    http://localhost:3000
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **LoginAuth**: Component for user login.
+- **SignUpAuth**: Component for user sign-up.
+- **PokemonCollection**: Component to display a collection of Pokémon.
+- **PokemonBreifCard**: Component to display a brief card of a Pokémon.
+- **PokemonDetailedCard**: Component to display detailed information of a selected Pokémon.
 
-## Learn More
+### Redux Slices
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **authSlice.js**: Manages authentication state.
+- **pokemonSlice.js**: Manages Pokémon state including selected Pokémon.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## API
 
-### Code Splitting
+The application fetches data from the [PokeAPI](https://pokeapi.co/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. **Sign Up**: Create a new account using the Sign Up page.
+2. **Log In**: Log in with your username and password.
+3. **View Pokémon Collection**: After logging in, you will be redirected to the Pokémon collection page.
+4. **View Detailed Pokémon Information**: Click on a Pokémon card to view detailed information. The URL will update to reflect the selected Pokémon.
+5. **Log Out**: Use the log out button to log out of your account and return to the login page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
