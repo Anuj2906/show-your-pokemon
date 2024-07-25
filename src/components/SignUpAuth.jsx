@@ -12,17 +12,18 @@ const SignUpAuth = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  // SignUp form handler
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username && password) {
       dispatch(setAuth({ username, password }));
       navigate(`/auth/${username}`);
-      alert('Login successful!');
+      alert('SignUp successful!');
     } else {
       setError('Invalid username or password');
     }
   };
-  
+
 
   return (
     <>

@@ -4,8 +4,8 @@ import authRducer from './slices/auth.js';
 
 const store = configureStore({
   reducer: {
-    pokemon: pokemonReducer,
-    auth : authRducer,
+    pokemon: pokemonReducer, // for clicked pokemon data
+    auth: authRducer, // for login credentials
   },
 });
 

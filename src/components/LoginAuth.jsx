@@ -12,6 +12,7 @@ const LoginAuth = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  // Login form handler
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username && password) {
@@ -22,7 +23,7 @@ const LoginAuth = () => {
       setError('Invalid username or password');
     }
   };
-  
+
 
   return (
     <Container className="mt-5">

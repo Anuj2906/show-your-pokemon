@@ -6,10 +6,14 @@ import './PokemonBreifCard.css';
 function PokemonBreifCard({ pokemon, onClick }) {
   const [pokemonSpec, setPokemonSpec] = useState(null);
 
+  // fetches pokemon's specification
   const fetchPokemonSpec = async () => {
     try {
       const response = await axios.get(pokemon.url);
-      setPokemonSpec(response.data);
+      if(response.data)setPokemonSpec(response.data);
+      else {
+        throw new Error('Failed to fetch data');
+      }
     } catch (error) {
       console.error('Error fetching Pokémon data:', error);
     }
@@ -17,8 +21,9 @@ function PokemonBreifCard({ pokemon, onClick }) {
 
   useEffect(() => {
     fetchPokemonSpec();
-  }, [pokemon.url]);
+  });
 
+  // shows Loading message untill we get data
   if (!pokemonSpec) {
     return <div>Loading...</div>;
   }

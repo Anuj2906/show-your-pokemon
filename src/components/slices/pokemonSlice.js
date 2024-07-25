@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// for selected pokemon
 const pokemonSlice = createSlice({
   name: 'pokemon',
   initialState: {

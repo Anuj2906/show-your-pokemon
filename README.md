@@ -64,15 +64,16 @@ Follow these instructions to set up and run the project on your local machine.
 
 ## API
 
-The application fetches data from the [PokeAPI](https://pokeapi.co/).
-
+The application fetches data from the [PokeAPI](https://pokeapi.co/api/v2/pokemon?limit=20&offset=10).
+Change limit and offset in the api url to get data according to your need.
 ## Usage
 
 1. **Sign Up**: Create a new account using the Sign Up page.
 2. **Log In**: Log in with your username and password.
 3. **View Pokémon Collection**: After logging in, you will be redirected to the Pokémon collection page.
-4. **View Detailed Pokémon Information**: Click on a Pokémon card to view detailed information. The URL will update to reflect the selected Pokémon.
-5. **Log Out**: Use the log out button to log out of your account and return to the login page.
+4. **Pagination**: We can change page by next and previous buttons.
+5. **View Detailed Pokémon Information**: Click on a Pokémon card to view detailed information. The URL will update to reflect the selected Pokémon.
+6. **Log Out**: Use the log out button to log out of your account and return to the login page.
 
 
 

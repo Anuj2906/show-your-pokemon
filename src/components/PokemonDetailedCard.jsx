@@ -11,17 +11,19 @@ const PokemonDetailedCard = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   
-
+  // handles close button in pokemon detailed card
   const handleClose = () => {
     dispatch(clearSelectedPokemon());
     navigate(-1);
   };
 
+  // handles logout
   const handleLogout = () => {
     dispatch(clearAuth());
     navigate('/login');
   };
 
+  // shows Loading message untill we get data
   if (!selectedPokemon) {
     return <div>Loading...</div>;
   }
